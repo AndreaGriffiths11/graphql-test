@@ -1,9 +1,9 @@
 query {
-  repositoryOwner(login: "andreagriffiths22") {
+  repositoryOwner(login: "andreagriffiths11") {
     repository(name: "graphql-test") {
       object(expression: "master") {
         ... on Commit {
-          blame(path: "string!") {
+          blame(path: "") {
             ranges {
               startingLine
               endingLine
