@@ -3,7 +3,7 @@ query {
     repository(name: "graphql-test") {
       object(expression: "master") {
         ... on Commit {
-          blame(path: "sting!") {
+          blame(path: "string!") {
             ranges {
               startingLine
               endingLine
