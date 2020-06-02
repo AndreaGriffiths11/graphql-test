@@ -1,0 +1,23 @@
+query {
+  repositoryOwner(login: "andreagriffiths11") {
+    repository(name: "graphql-test") {
+      object(expression: "master") {
+        ... on Commit {
+          blame(path: "") {
+            ranges {
+              startingLine
+              endingLine
+              age
+              commit {
+                oid
+                author {
+                  name
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
