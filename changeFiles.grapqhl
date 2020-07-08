@@ -1,0 +1,15 @@
+{
+  repository(owner: "humanutility", name: "detroit-water-project") {
+    pullRequest(number: 19) {
+      title
+      changedFiles
+      files(first: 100) {
+        edges {
+          node {
+            path
+          }
+        }
+      }
+    }
+  }
+}
